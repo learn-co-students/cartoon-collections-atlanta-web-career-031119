@@ -1,5 +1,8 @@
-def roll_call_dwarves# code an argument here
+def roll_call_dwarves(arr)# code an argument here
   # Your code here
+  arr.each_with_index do |x|
+    puts "#{arr.index+1}"+"."+"#{x}"
+  end
 end
 
 def summon_captain_planet# code an argument here
