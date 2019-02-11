@@ -8,7 +8,7 @@ def roll_call_dwarves(arr)
   puts roll_call
 end
 
-def summon_captain_plane(arr)# code an argument here
+def summon_captain_planet(arr)# code an argument here
   # Your code here
   extra = "!"
   arr.collect!{|call|call.capitalize+extra}
