@@ -10,8 +10,17 @@ def long_planeteer_calls(array)
   array.any? {|word| word.length > 4}
 end
 
+# def find_the_cheese(array)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   found_it = array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
+#   return found_it
+# end
+
 def find_the_cheese(array)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  found_it = array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
-  return found_it
+  array.each do |item|
+    if item == "cheddar" || "gouda" || "camembert"
+      return item
+    end
+  end
+  return nil
 end
