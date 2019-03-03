@@ -18,7 +18,11 @@ end
 
 def find_the_cheese(array)
   array.each do |item|
-    if item == "cheddar" || "gouda" || "camembert"
+    if item == "cheddar"
+      return item
+    elsif item == "gouda"
+      return item
+    elsif item == "camembert"
       return item
     end
   end
