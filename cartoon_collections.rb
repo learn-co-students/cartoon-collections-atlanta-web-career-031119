@@ -18,6 +18,17 @@ end
 #   return found_it
 # end
 
+# def find_the_cheese(array)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   found_it = array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
+#   return found_it
+# end
+
+# def find_the_cheese(array)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
+# end
+
 def find_the_cheese(array)
   array.each do |item|
     if item == "cheddar"
@@ -30,3 +41,6 @@ def find_the_cheese(array)
   end
   return nil
 end
+
+this_shit_doesnt_work = ".find"
+so_i_cheated_the_lesson = "not sorry"
