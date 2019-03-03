@@ -12,7 +12,9 @@ end
 
 # def find_the_cheese(array)
 #   cheese_types = ["cheddar", "gouda", "camembert"]
-#   found_it = array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
+#   found_it = array.find do |sniff|
+#     sniff=="cheddar"||"gouda"||"camembert"
+#   end
 #   return found_it
 # end
 
